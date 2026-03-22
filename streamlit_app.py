@@ -117,28 +117,38 @@ st.markdown(f"""
     div[data-testid="stFileUploader"] button:hover {{ color: #a855f7 !important; background: transparent !important; }}
 
     div[data-baseweb="textarea"], div[data-baseweb="textarea"] > textarea {{
-        background-color: rgba(0, 0, 0, 0.4) !important;
+        background-color: #f1f3f7 !important;
         border: none !important;
-        border-radius: 16px !important;
-        color: #f1f0f5 !important;
+        border-radius: 24px !important;
+        color: #2d2d3e !important;
+        padding: 20px !important;
+        font-size: 0.95rem !important;
     }}
-    div[data-testid="stTextArea"] {{ border: 1px solid rgba(255, 255, 255, 0.1) !important; border-radius: 16px !important; }}
-    div[data-testid="stTextArea"]:focus-within {{ border-color: #a855f7 !important; box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1) !important; }}
-
+    div[data-testid="stTextArea"] {{ border: none !important; border-radius: 24px !important; background: transparent !important; }}
+    
     .stButton button {{
-        background: linear-gradient(135deg, #6366f1, #a855f7) !important;
-        color: white !important; font-weight: 600 !important; font-size: 1.1rem !important;
-        padding: 18px 40px !important; border: none !important; border-radius: 16px !important;
-        box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3) !important; width: 100% !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        color: rgba(255, 255, 255, 0.4) !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        padding: 14px 40px !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        border-radius: 12px !important;
+        width: auto !important;
+        min-width: 320px !important;
+        margin: 0 auto !important;
+        display: block !important;
         transition: all 0.3s !important;
     }}
-    .stButton button:hover {{ transform: translateY(-2px) !important; box-shadow: 0 6px 30px rgba(99, 102, 241, 0.45) !important; }}
-    .stButton button:disabled {{
-        background: rgba(255,255,255,0.05) !important;
-        color: rgba(255,255,255,0.3) !important;
-        box-shadow: none !important;
-        transform: none !important;
-        cursor: not-allowed !important;
+    .stButton button:not(:disabled) {{
+        background: linear-gradient(135deg, #6366f1, #a855f7) !important;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2) !important;
+        border: none !important;
+    }}
+    .stButton button:hover:not(:disabled) {{
+        transform: translateY(-1px) !important;
+        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3) !important;
     }}
 </style>
 
