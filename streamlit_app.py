@@ -122,17 +122,21 @@ st.markdown(f"""
     div[data-testid="stFileUploader"] button:hover {{ color: #a855f7 !important; background: transparent !important; }}
 
     div[data-baseweb="textarea"], div[data-baseweb="textarea"] > textarea {{
-        background-color: #f1f3f7 !important;
+        background-color: rgba(0, 0, 0, 0.4) !important;
         border: none !important;
-        color: #2d2d3e !important;
+        color: #f1f0f5 !important;
         padding: 20px !important;
         font-size: 0.95rem !important;
     }}
     div[data-testid="stTextArea"] {{ 
-        border: 8px solid white !important; 
-        border-radius: 32px !important; 
-        background: #f1f3f7 !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important; 
+        border-radius: 20px !important; 
+        background: transparent !important;
         overflow: hidden !important;
+    }}
+    div[data-testid="stTextArea"]:focus-within {{ 
+        border-color: rgba(99, 102, 241, 0.5) !important;
+        box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2) !important;
     }}
     
     .stButton button {{
