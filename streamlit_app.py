@@ -104,12 +104,15 @@ st.markdown(f"""
     }}
     
     div[data-testid="stFileUploader"] {{ 
-        background: transparent !important; border: 2px dashed rgba(255, 255, 255, 0.2) !important;
-        border-radius: 16px !important; padding: 20px !important; text-align: center !important;
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 24px !important;
+        padding: 30px !important;
+        text-align: center !important;
     }}
-    div[data-testid="stFileUploader"]:hover {{ border-color: #6366f1 !important; background: rgba(99, 102, 241, 0.05) !important; }}
+    div[data-testid="stFileUploader"]:hover {{ border-color: rgba(255, 255, 255, 0.3) !important; background: rgba(255, 255, 255, 0.05) !important; }}
     div[data-testid="stFileUploader"] section {{ background: transparent !important; color: #a09cb0 !important; }}
-    div[data-testid="stFileUploader"] small {{ color: #6b6680 !important; }}
+    div[data-testid="stFileUploader"] small {{ color: #6b6680 !important; font-size: 0.75rem !important; }}
     div[data-testid="stFileUploader"] button {{
         background: transparent !important; border: none !important; color: #6366f1 !important;
         font-weight: 600 !important; font-size: 1rem !important; box-shadow: none !important; padding: 0 !important;
@@ -117,14 +120,18 @@ st.markdown(f"""
     div[data-testid="stFileUploader"] button:hover {{ color: #a855f7 !important; background: transparent !important; }}
 
     div[data-baseweb="textarea"], div[data-baseweb="textarea"] > textarea {{
-        background-color: #f1f3f7 !important;
+        background-color: #1e1e2e !important;
         border: none !important;
-        border-radius: 24px !important;
-        color: #2d2d3e !important;
+        color: #f1f0f5 !important;
         padding: 20px !important;
         font-size: 0.95rem !important;
     }}
-    div[data-testid="stTextArea"] {{ border: none !important; border-radius: 24px !important; background: transparent !important; }}
+    div[data-testid="stTextArea"] {{ 
+        border: 8px solid white !important; 
+        border-radius: 32px !important; 
+        background: #1e1e2e !important;
+        overflow: hidden !important;
+    }}
     
     .stButton button {{
         background: rgba(255, 255, 255, 0.05) !important;
