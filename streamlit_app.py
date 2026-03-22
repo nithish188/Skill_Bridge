@@ -104,15 +104,15 @@ st.markdown(f"""
     }}
     
     div[data-testid="stFileUploader"] {{ 
-        background: rgba(255, 255, 255, 0.03) !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        background: transparent !important;
+        border: 2px dashed rgba(255, 255, 255, 0.2) !important;
         border-radius: 24px !important;
         padding: 30px !important;
         text-align: center !important;
     }}
-    div[data-testid="stFileUploader"]:hover {{ border-color: rgba(255, 255, 255, 0.3) !important; background: rgba(255, 255, 255, 0.05) !important; }}
+    div[data-testid="stFileUploader"]:hover {{ border-color: #6366f1 !important; background: rgba(99, 102, 241, 0.05) !important; }}
     div[data-testid="stFileUploader"] section {{ background: transparent !important; color: #a09cb0 !important; }}
-    div[data-testid="stFileUploader"] small {{ color: #6b6680 !important; font-size: 0.75rem !important; }}
+    div[data-testid="stFileUploader"] small {{ color: #6b6680 !important; }}
     div[data-testid="stFileUploader"] button {{
         background: transparent !important; border: none !important; color: #6366f1 !important;
         font-weight: 600 !important; font-size: 1rem !important; box-shadow: none !important; padding: 0 !important;
@@ -120,38 +120,37 @@ st.markdown(f"""
     div[data-testid="stFileUploader"] button:hover {{ color: #a855f7 !important; background: transparent !important; }}
 
     div[data-baseweb="textarea"], div[data-baseweb="textarea"] > textarea {{
-        background-color: #1e1e2e !important;
+        background-color: #f1f3f7 !important;
         border: none !important;
-        color: #f1f0f5 !important;
+        color: #2d2d3e !important;
         padding: 20px !important;
         font-size: 0.95rem !important;
     }}
     div[data-testid="stTextArea"] {{ 
         border: 8px solid white !important; 
         border-radius: 32px !important; 
-        background: #1e1e2e !important;
+        background: #f1f3f7 !important;
         overflow: hidden !important;
     }}
     
     .stButton button {{
-        background: rgba(255, 255, 255, 0.05) !important;
-        color: rgba(255, 255, 255, 0.4) !important;
+        background: linear-gradient(135deg, #7c3aed, #a855f7) !important;
+        color: white !important;
         font-weight: 600 !important;
-        font-size: 1rem !important;
-        padding: 14px 40px !important;
-        border: 1px solid rgba(255, 255, 255, 0.05) !important;
-        border-radius: 12px !important;
+        font-size: 1.1rem !important;
+        padding: 16px 60px !important;
+        border-radius: 20px !important;
+        border: none !important;
         width: auto !important;
-        min-width: 320px !important;
+        min-width: 450px !important;
         margin: 0 auto !important;
         display: block !important;
-        transition: all 0.3s !important;
+        box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4) !important;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     }}
-    .stButton button:not(:disabled) {{
-        background: linear-gradient(135deg, #6366f1, #a855f7) !important;
-        color: white !important;
-        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2) !important;
-        border: none !important;
+    .stButton button:hover {{
+        transform: scale(1.02) translateY(-2px) !important;
+        box-shadow: 0 15px 40px rgba(124, 58, 237, 0.5) !important;
     }}
     .stButton button:hover:not(:disabled) {{
         transform: translateY(-1px) !important;
