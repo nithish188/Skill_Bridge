@@ -89,18 +89,20 @@ st.markdown(f"""
     .stat-val {{ font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }}
     .stat-lbl {{ font-size: 0.85rem; color: #6b6680; font-weight: 500; }}
 
-    /* Streamlit Input Overrides */
-    
     /* Make the whole Streamlit column look like .upload-card */
     div[data-testid="column"]:has(div.upload-card-header) {{
-        background: rgba(22, 22, 35, 0.7) !important;
-        border: 1px solid rgba(255, 255, 255, 0.06) !important;
-        border-radius: 24px !important;
-        padding: 32px !important;
-        transition: all 0.3s !important;
+        background: rgba(18, 18, 30, 0.8) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 32px !important;
+        padding: 48px 40px !important;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3) !important;
+        min-height: 520px !important;
     }}
     div[data-testid="column"]:has(div.upload-card-header):hover {{
-        border-color: rgba(99, 102, 241, 0.3) !important;
+        border-color: rgba(255, 255, 255, 0.15) !important;
+        background: rgba(20, 20, 35, 0.9) !important;
+        transform: translateY(-2px) !important;
     }}
     
     div[data-testid="stFileUploader"] {{ 
